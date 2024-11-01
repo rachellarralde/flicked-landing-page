@@ -51,12 +51,6 @@ export function LandingPage() {
             >
               Download for iOS
             </Link>
-            <Link
-              href="#features"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-gray-900 px-8 text-sm font-medium text-white hover:bg-gray-800"
-            >
-              Learn More
-            </Link>
           </div>
         </section>
 
@@ -68,26 +62,22 @@ export function LandingPage() {
                 <div className="relative w-full max-w-[280px]">
                   <div className="relative aspect-[9/19] overflow-hidden rounded-[2.5rem] border-[8px] border-gray-900 bg-gray-900">
                     <Image
-                      src="/placeholder.svg?height=580&width=280"
+                      src="/pic1.png"
                       alt="Discover Screen"
                       width={280}
                       height={580}
                       className="object-cover"
                     />
                   </div>
-                  <div className="absolute -left-32 top-12 flex max-w-[200px] items-center rounded-2xl bg-[#1a1f2d] p-4 shadow-lg">
+                  <div className="absolute -left-32 top-12 flex max-w-[200px] items-center rounded-2xl bg-[#1a1f2d] p-4 shadow-lg z-10">
                     <Film className="mr-2 h-5 w-5 text-red-500" />
                     <p className="text-sm">Discover trending movies and shows</p>
-                  </div>
-                  <div className="absolute -right-20 top-48 flex max-w-[200px] items-center rounded-2xl bg-[#1a1f2d] p-4 shadow-lg">
-                    <Star className="mr-2 h-5 w-5 text-red-500" />
-                    <p className="text-sm">Rate and review content</p>
                   </div>
                 </div>
                 <div className="relative w-full max-w-[280px]">
                   <div className="relative aspect-[9/19] overflow-hidden rounded-[2.5rem] border-[8px] border-gray-900 bg-gray-900">
                     <Image
-                      src="/placeholder.svg?height=580&width=280"
+                      src="/pic2.png"
                       alt="Recommendations Screen"
                       width={280}
                       height={580}
@@ -98,7 +88,7 @@ export function LandingPage() {
                     <AppWindow className="mr-2 h-5 w-5 text-red-500" />
                     <p className="text-sm">Get personalized recommendations</p>
                   </div>
-                  <div className="absolute -right-24 top-64 flex max-w-[200px] items-center rounded-2xl bg-[#1a1f2d] p-4 shadow-lg">
+                  <div className="absolute -right-24 top-64 flex max-w-[200px] items-center rounded-2xl bg-[#1a1f2d] p-4 shadow-lg z-10">
                     <Tv className="mr-2 h-5 w-5 text-red-500" />
                     <p className="text-sm">Browse TV shows and series</p>
                   </div>
@@ -106,7 +96,7 @@ export function LandingPage() {
                 <div className="relative w-full max-w-[280px]">
                   <div className="relative aspect-[9/19] overflow-hidden rounded-[2.5rem] border-[8px] border-gray-900 bg-gray-900">
                     <Image
-                      src="/placeholder.svg?height=580&width=280"
+                      src="/pic3.png"
                       alt="Watchlist Screen"
                       width={280}
                       height={580}
