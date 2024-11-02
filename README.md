@@ -4,4 +4,3 @@ Langing page for Flicked using Next.js. Flicked is an iOS app that helps you dis
 
 ---
 
-© {new Date().getFullYear()} Flicked. All rights reserved.
