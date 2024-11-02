@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { AppWindow, Github, Film, Heart, Star, Tv } from "lucide-react"
+import { AppWindow, Github, Film, Heart, Star, Tv, Download, Smartphone } from "lucide-react"
 
 export function LandingPage() {
   return (
@@ -20,11 +20,10 @@ export function LandingPage() {
         </Link>
         <nav>
           <Link
-            href="https://github.com"
+            href="https://apps.apple.com"
             className="flex items-center space-x-2 hover:text-gray-300"
           >
-            <Github className="h-5 w-5" />
-            <span>GitHub</span>
+            <Smartphone className="w-5 h-5" />
           </Link>
         </nav>
       </header>
@@ -41,7 +40,7 @@ export function LandingPage() {
             Movie or Show
           </h1>
           <p className="mb-12 max-w-[600px] text-gray-400 md:text-xl">
-            Get personalized recommendations, track what you watch, and discover new content with our
+            Get personalized recommendations, find where to stream, and discover new content with our
             intelligent suggestion engine.
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -62,7 +61,7 @@ export function LandingPage() {
                 <div className="relative w-full max-w-[280px]">
                   <div className="relative aspect-[9/19] overflow-hidden rounded-[2.5rem] border-[8px] border-gray-900 bg-gray-900">
                     <Image
-                      src="/pic1.png"
+                      src="/movie-list.png"
                       alt="Discover Screen"
                       width={280}
                       height={580}
@@ -77,39 +76,31 @@ export function LandingPage() {
                 <div className="relative w-full max-w-[280px]">
                   <div className="relative aspect-[9/19] overflow-hidden rounded-[2.5rem] border-[8px] border-gray-900 bg-gray-900">
                     <Image
-                      src="/pic2.png"
+                      src="/detail.png"
                       alt="Recommendations Screen"
                       width={280}
                       height={580}
                       className="object-cover"
                     />
                   </div>
-                  <div className="absolute -left-20 top-32 flex max-w-[200px] items-center rounded-2xl bg-[#1a1f2d] p-4 shadow-lg">
-                    <AppWindow className="mr-2 h-5 w-5 text-red-500" />
-                    <p className="text-sm">Get personalized recommendations</p>
-                  </div>
                   <div className="absolute -right-24 top-64 flex max-w-[200px] items-center rounded-2xl bg-[#1a1f2d] p-4 shadow-lg z-10">
                     <Tv className="mr-2 h-5 w-5 text-red-500" />
-                    <p className="text-sm">Browse TV shows and series</p>
+                    <p className="text-sm">Find where to stream your favorites</p>
                   </div>
                 </div>
                 <div className="relative w-full max-w-[280px]">
                   <div className="relative aspect-[9/19] overflow-hidden rounded-[2.5rem] border-[8px] border-gray-900 bg-gray-900">
                     <Image
-                      src="/pic3.png"
+                      src="/similar-movies.png"
                       alt="Watchlist Screen"
                       width={280}
                       height={580}
                       className="object-cover"
                     />
                   </div>
-                  <div className="absolute -left-24 top-16 flex max-w-[200px] items-center rounded-2xl bg-[#1a1f2d] p-4 shadow-lg">
-                    <Heart className="mr-2 h-5 w-5 text-red-500" />
-                    <p className="text-sm">Track your watchlist easily</p>
-                  </div>
                   <div className="absolute -right-32 top-44 flex max-w-[200px] items-center rounded-2xl bg-[#1a1f2d] p-4 shadow-lg">
                     <AppWindow className="mr-2 h-5 w-5 text-red-500" />
-                    <p className="text-sm">Get notified about new releases</p>
+                    <p className="text-sm">Get personalized recommendations</p>
                   </div>
                 </div>
               </div>
